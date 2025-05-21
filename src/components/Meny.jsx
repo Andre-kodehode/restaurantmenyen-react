@@ -1,20 +1,13 @@
-import { Corner } from "./Corner";
+import { Item } from "./Item";
 
-export function Meny({ menu, corners }) {
-  return (
-    <>
-      {menu.map((menu) => {
-        return (
-          <div className="card" key={menu.id}>
-            <h2 className="tittel">{menu.tittel}</h2>
-            <p className="text">{menu.tittel}</p>
-            <p className="text">Pris: {menu.pris}</p>
-            <p className="text">Ingredienser: {menu.ingredienser}</p>
-            <p className="text">{menu.kategori}</p>
-            <Corner corners={corners} />
-          </div>
-        );
-      })}
-    </>
-  );
+export function Meny({ menu }) {
+  const sortbyCategory = ["Forrett", "Hovedrett", "Dessert"];
+
+  const sortedMenu = [...menu].sort((a, b) => {
+    return (
+      sortbyCategory.indexOf(a.kategori) - sortbyCategory.indexOf(b.kategori)
+    );
+  });
+
+  return <Item sortedMenu={sortedMenu} />;
 }

@@ -1,4 +1,6 @@
-export function Corner({ corners }) {
+import corners from "../data/corners";
+
+export function Corner() {
   return corners.map((corner) => (
     <div className={`corner ${corner.positionClass}`}>
       <img src={corner.src} alt={corner.altText} />
