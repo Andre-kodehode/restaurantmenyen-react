@@ -2,12 +2,12 @@ const corners = [
   {
     positionClass: "top-left",
     altText: "Top Left Corner",
-    src: "/red-floral-corner.png",
+    src: "/restaurantmenyen-react/red-floral-corner.png",
   },
   {
     positionClass: "top-right",
     altText: "Top Right Corner",
-    src: "/red-floral-corner.png",
+    src: "/restaurantmenyen-react/red-floral-corner.png",
   },
   // {
   //   positionClass: "bottom-right",
