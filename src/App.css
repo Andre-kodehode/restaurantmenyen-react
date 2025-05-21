@@ -1,0 +1,73 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tittel {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.text {
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card {
+  position: relative;
+  background-color: #fffaf0;
+  margin: 20px;
+  border: 2px black solid;
+  padding: 10px 0px;
+}
+
+/* Base corner style */
+.corner {
+  position: absolute;
+  width: 120px;
+  height: 100px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.corner img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.top-left {
+  top: -15px;
+  left: -30px;
+  transform: rotate(180deg);
+}
+
+.top-right {
+  top: -15px;
+  right: -30px;
+  transform: scaleY(-1);
+}
+
+.bottom-right {
+  bottom: -15px;
+  right: -30px;
+  transform: rotate(0deg);
+}
+
+.bottom-left {
+  bottom: -15px;
+  left: -30px;
+  transform: rotate(90deg);
+  transform: scaleX(-1);
+}
