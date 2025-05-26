@@ -1,13 +1,5 @@
-import { Item } from "./Item";
+import { GroupedListComponent } from "./GroupedListComponent";
 
 export function Meny({ menu }) {
-  const sortbyCategory = ["Forrett", "Hovedrett", "Dessert"];
-
-  const sortedMenu = [...menu].sort((a, b) => {
-    return (
-      sortbyCategory.indexOf(a.kategori) - sortbyCategory.indexOf(b.kategori)
-    );
-  });
-
-  return <Item sortedMenu={sortedMenu} />;
+  return <GroupedListComponent items={menu} />;
 }

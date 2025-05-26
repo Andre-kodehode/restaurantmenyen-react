@@ -3,14 +3,26 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: #c3bfb6;
 }
 
-.tittel {
+body {
+  background-color: #dcd7c9;
+}
+
+.item-title {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-size: 2rem;
   font-weight: 900;
   font-style: normal;
+  margin: 0;
+}
+
+.item-title-readable {
+  border-top: 0.5px solid #ff9b45;
+  padding-top: 0.25rem;
+  margin-top: 0.5rem;
 }
 
 .text {
@@ -20,15 +32,21 @@
   font-style: normal;
 }
 
-.card {
+.item {
   position: relative;
-  background-color: #fffaf0;
   margin: 20px;
-  border: 2px black solid;
-  padding: 10px 0px;
+  padding: 10px;
 }
 
-/* Base corner style */
+.kategori {
+  border: 5px #8e1616 solid;
+  background-color: #1d1616;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+  border-radius: 50px;
+}
+
 .corner {
   position: absolute;
   width: 120px;
@@ -42,6 +60,7 @@
 }
 
 .corner img {
+  padding: 100px;
   max-width: 100%;
   max-height: 100%;
   display: block;
